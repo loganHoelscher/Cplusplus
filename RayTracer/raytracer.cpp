@@ -7,6 +7,7 @@
 #include <iostream> 
 #include <cassert> 
 
+
 struct vec3 {
   double x,y,z;
   vec3(double x, double y, double z) : x(x), y(y), z(z) {}
@@ -83,7 +84,7 @@ int main() {
   const Sphere sphere2(vec3(Width * 0.8, Height * 0.8, 90), 90);
   const Sphere groundSphere(vec3(Width * 0.5, 600, -100),300);
   
-  //const Plane plane(vec3(Width, Height * 0.5, 50), 50);
+
 
   std::ofstream out("out.ppm");
   out << "P3\n" << Width << ' ' << Height << ' ' << "255\n";
